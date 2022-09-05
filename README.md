@@ -12,6 +12,7 @@ Para rodar esse projeto, basta seguir os seguintes passos:
 - Rodar o comando cp .env.example .env
 - Para o próximo passo, recomendo ter uma IDE de banco de dados. Para prosseguir, será necessário criar um banco de dados chamado api-cakes ou com o nome que desejar, porém tendo que ser alterado no arquivo .env posteriormente
 - Após criar a base de dados, rodar o comando php artisan migrate dentro do container para criar as tabelas
+- Rodar o comando php artisan queue:work --queue=high,default para deixar ativo o processador de filas
 
 Documentação para consumo dos endpoints
 
